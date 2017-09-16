@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <v-app>
-      <app-navegador></app-navegador>
+      <app-cabecera class="my-5"></app-cabecera>
+      <app-navegador class=""></app-navegador>
       <main>
         <v-container>
           <router-view></router-view>

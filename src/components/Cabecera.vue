@@ -1,6 +1,6 @@
 <template>
-  <div ma-8>
-    <v-spacer></v-spacer>
+  <div class="cabeza">
+    Cabecera
   </div>
 </template>
 
@@ -10,6 +10,8 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style>
+cabeza {
+  margin-top: 50px
+}
 </style>
