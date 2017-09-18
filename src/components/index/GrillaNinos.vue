@@ -23,5 +23,37 @@
       </v-card>
     </v-flex>
   </v-layout>
+  <v-layout row>
+    <v-flex xs4 sm12 v-for="informaciones in informacion">
+      <v-card>
+        <v-card-title primary-title>
+          <div>
+            <h3 class="headline mb-0">{{ informacion.title }}</h3>
+            <div> {{ informacion.text }} </div>
+          </div>
+        </v-card-title>
+      </v-card>
+    </v-flex>
+  </v-layout>
 </template>
+
+<script>
+export default {
+    data () {
+      return {
+        informaciones: [
+          { title: 'Title1'
+            text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic incidunt magni itaque optio neque officiis, veritatis doloribus modi, tenetur unde, cumque, dicta iste quos? Dolor quaerat consectetur provident maiores sit delectus cupiditate fugit aliquam quibusdam.'
+          },
+          { title: 'Title3'
+            text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic incidunt magni itaque optio neque officiis, veritatis doloribus modi, tenetur unde, cumque, dicta iste quos? Dolor quaerat consectetur provident maiores sit delectus cupiditate fugit aliquam quibusdam.'
+          },
+          { title: 'Title2'
+            text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic incidunt magni itaque optio neque officiis, veritatis doloribus modi, tenetur unde, cumque, dicta iste quos? Dolor quaerat consectetur provident maiores sit delectus cupiditate fugit aliquam quibusdam.'
+          },
+        ] 
+      }
+    }
+  }
+</script>
 
